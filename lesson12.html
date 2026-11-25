@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>12차시 - 자신의 강점 구체화하기</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --primary:#2f6fed; --primary-dark:#1d4fbf; --bg:#f6f7fb; --card:#ffffff;
+  --text:#1f2430; --sub:#6b7280; --border:#e3e6ec; --accent:#fef3e0; --good:#2e9e6b;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:'Pretendard',-apple-system,'Noto Sans KR',sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.6; padding-bottom:60px;
+}
+header.top{
+  background:var(--primary); color:#fff; padding:18px 20px; position:sticky; top:0; z-index:10;
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;
+}
+header.top a{color:#fff; text-decoration:none; font-size:14px; border:1px solid rgba(255,255,255,.6); padding:6px 12px; border-radius:20px;}
+header.top a:hover{background:rgba(255,255,255,.15);}
+.title{font-size:18px; font-weight:700;}
+.wrap{max-width:760px; margin:24px auto; padding:0 16px;}
+.card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:22px 24px; margin-bottom:20px;}
+.card h2{margin-top:0; font-size:17px; color:var(--primary-dark); display:flex; align-items:center; gap:8px;}
+.badge{display:inline-block; background:var(--accent); color:#8a5a00; font-size:12px; padding:3px 10px; border-radius:20px; font-weight:600;}
+.sub{color:var(--sub); font-size:14px; margin:4px 0 14px;}
+.flow{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;}
+.flow span{background:#eef3ff; color:var(--primary-dark); font-size:13px; padding:6px 12px; border-radius:20px;}
+label{display:block; font-size:14px; font-weight:600; margin:14px 0 6px;}
+input[type=text], textarea, select{
+  width:100%; padding:10px 12px; border:1px solid var(--border); border-radius:10px; font-size:14px;
+  font-family:inherit; background:#fff;
+}
+textarea{resize:vertical; min-height:60px;}
+.row-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+.info-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:6px;}
+@media (max-width:600px){.row-grid,.info-grid{grid-template-columns:1fr 1fr;}}
+.music-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:10px;}
+@media (max-width:600px){.music-grid{grid-template-columns:1fr;}}
+.music-box{border:1px solid var(--border); border-radius:12px; padding:14px;}
+.music-box .mtitle{font-weight:700; font-size:14px; margin-bottom:8px; color:var(--primary-dark);}
+.chk{display:flex; align-items:center; gap:6px; font-size:13.5px; font-weight:400; margin:4px 0;}
+.chk input{width:16px; height:16px;}
+.example{background:#f4f6fb; border-left:3px solid var(--primary); padding:8px 12px; font-size:13px; color:var(--sub); border-radius:6px; margin:8px 0;}
+.blank-sentence{font-size:14px; line-height:2.1; margin:10px 0;}
+.blank-sentence input{display:inline-block; width:180px; border:none; border-bottom:2px solid var(--primary); border-radius:0; padding:2px 6px; font-size:14px; background:#f4f6fb;}
+.actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px;}
+button{
+  cursor:pointer; border:none; border-radius:10px; padding:11px 18px; font-size:14px; font-weight:600;
+  font-family:inherit;
+}
+.btn-primary{background:var(--primary); color:#fff;}
+.btn-primary:hover{background:var(--primary-dark);}
+.btn-ghost{background:#fff; color:var(--primary-dark); border:1px solid var(--border);}
+.btn-ghost:hover{background:#f0f3fa;}
+.save-status{font-size:12.5px; color:var(--good); margin-top:10px; min-height:18px;}
+.navfoot{display:flex; justify-content:space-between; max-width:760px; margin:0 auto 40px; padding:0 16px;}
+.navfoot a{
+  text-decoration:none; font-size:14px; color:var(--primary-dark); border:1px solid var(--border);
+  background:#fff; padding:10px 16px; border-radius:10px; font-weight:600;
+}
+.navfoot a:hover{background:#f0f3fa;}
+.keyword-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px;}
+.keyword-row input{flex:1; min-width:110px;}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="title">12차시 &middot; 자기 - 강점 구체화하기</div>
+  <a href="index.html">목차</a>
+</header>
+<div class="wrap">
+
+  <div class="card">
+    <h2>수업 안내 <span class="badge">학습 목표</span></h2>
+    <p class="sub">자신의 약점과 강점을 이해하고, 타인의 강점과 약점도 존중하고 배려하는 마음을 키운다.</p>
+    <div class="flow">
+      <span>도입 - 지난 시간 감상곡 다시 듣기</span>
+      <span>이해하기 - 새롭게 발견한 강점/약점</span>
+      <span>연습하기 - 패들렛에 강점 소개</span>
+      <span>적용하기 - 친구 강점 존중(선플)</span>
+      <span>정리하기 - 느낀점 발표</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>활동지 12 &middot; 자신의 강점 구체화 하기</h2>
+    <p class="sub">패들렛에 자신의 강점을 작성하기 전, 아래 초안을 먼저 작성해봅니다.</p>
+
+    <div class="info-grid">
+      <div><label>학년</label><input type="text" id="grade" placeholder="예: 1"></div>
+      <div><label>반</label><input type="text" id="classno" placeholder="예: 3"></div>
+      <div><label>번호</label><input type="text" id="studentno" placeholder="예: 12"></div>
+      <div><label>이름</label><input type="text" id="name" placeholder="홍길동"></div>
+    </div>
+
+    <label>1. 나는 어떤 강점이 있나요? 키워드 3개 이상 작성해보세요. (형용사/명사 모두 가능)</label>
+    <div class="example">예시) #끈기 있는 #웃음을 잃지 않는 #도전적인 #성실한 #배려심</div>
+    <div class="keyword-row">
+      <input type="text" id="kw1" placeholder="#키워드1">
+      <input type="text" id="kw2" placeholder="#키워드2">
+      <input type="text" id="kw3" placeholder="#키워드3">
+      <input type="text" id="kw4" placeholder="#키워드4 (선택)">
+      <input type="text" id="kw5" placeholder="#키워드5 (선택)">
+    </div>
+
+    <label style="margin-top:22px;">2. 나의 강점을 문장으로 정리하기 (빈칸 채우기)</label>
+    <div class="example">예시) 나는 힘든 과제가 나와도 끝까지 해 볼 때, 끈기라는 강점이 있다. / 이 강점 덕분에 나는 축구부 연습이 힘들어도 중간에 그만두지 않았다. / 앞으로 이 강점을 시험 공부 할 때도 써보고 싶다.</div>
+
+    <div class="blank-sentence">나는 <input type="text" id="blank1" placeholder="예: 힘든 과제가 나와도 끝까지 해 볼 때"> 를 할 때, 강점이 있다.</div>
+    <div class="blank-sentence">이 강점 덕분에 나는 <input type="text" id="blank2" placeholder="예: 축구부 연습이 힘들어도 그만두지 않을 수"> 을/를 할 수 있었다.</div>
+    <div class="blank-sentence">앞으로 이 강점을 <input type="text" id="blank3" placeholder="예: 시험 공부 할 때"> 에 써보고 싶다.</div>
+
+    <h2 style="margin-top:26px;">3. 패들렛에 공유하기</h2>
+    <p class="sub">아래 버튼으로 위 내용을 패들렛 붙여넣기용 텍스트로 복사한 뒤, 선생님이 안내한 패들렛 주소에 접속하여 붙여넣고 강점을 나타내는 이미지도 함께 올려주세요.</p>
+
+    <div class="actions">
+      <button class="btn-ghost" id="copyBtn">패들렛용 텍스트 복사하기</button>
+      <button class="btn-primary" id="downloadBtn">활동지 다운로드 (제출용 .txt)</button>
+    </div>
+    <div class="save-status" id="copyMsg" style="color:#2f6fed;"></div>
+    <div class="save-status" id="saveStatus"></div>
+  </div>
+</div>
+
+<div class="navfoot">
+  <a href="lesson11.html">&#8592; 이전 차시(11차시)</a>
+  <a href="index.html">목차로 돌아가기</a>
+</div>
+
+<script>
+
+function collectData(ids){
+  const data = {};
+  ids.forEach(id=>{
+    const el = document.getElementById(id);
+    if(!el) return;
+    if(el.type === 'checkbox'){ data[id] = el.checked; }
+    else { data[id] = el.value; }
+  });
+  return data;
+}
+function restoreData(ids, storeKey){
+  const saved = localStorage.getItem(storeKey);
+  if(!saved) return;
+  try{
+    const data = JSON.parse(saved);
+    ids.forEach(id=>{
+      const el = document.getElementById(id);
+      if(!el || !(id in data)) return;
+      if(el.type === 'checkbox'){ el.checked = data[id]; }
+      else { el.value = data[id]; }
+    });
+  }catch(e){}
+}
+function setupAutosave(ids, storeKey, statusElId){
+  restoreData(ids, storeKey);
+  const statusEl = document.getElementById(statusElId);
+  function save(){
+    const data = collectData(ids);
+    localStorage.setItem(storeKey, JSON.stringify(data));
+    if(statusEl){
+      const now = new Date();
+      const hh = String(now.getHours()).padStart(2,'0');
+      const mm = String(now.getMinutes()).padStart(2,'0');
+      statusEl.textContent = '저장됨 \u2713 (' + hh + ':' + mm + ' 기준, 이 기기에 자동 저장)';
+    }
+  }
+  ids.forEach(id=>{
+    const el = document.getElementById(id);
+    if(!el) return;
+    el.addEventListener('input', save);
+    el.addEventListener('change', save);
+  });
+  save();
+}
+function downloadText(filenameBase, lines){
+  const studentName = document.getElementById('name') ? (document.getElementById('name').value || '이름미입력') : '이름미입력';
+  const content = lines.join('\n');
+  const blob = new Blob([content], {type:'text/plain;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filenameBase + '_' + studentName + '.txt';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+
+const INFO_IDS = ['grade','classno','studentno','name'];
+const KEYWORD_IDS = ['kw1','kw2','kw3','kw4','kw5'];
+const SENTENCE_IDS = ['blank1','blank2','blank3'];
+const ALL_IDS = INFO_IDS.concat(KEYWORD_IDS).concat(SENTENCE_IDS);
+const STORE_KEY = 'ssec_lesson12_v1';
+
+window.addEventListener('DOMContentLoaded', ()=>{
+  restoreData(ALL_IDS, STORE_KEY);
+  const statusEl = document.getElementById('saveStatus');
+  function saveAll(){
+    const data = collectData(ALL_IDS);
+    localStorage.setItem(STORE_KEY, JSON.stringify(data));
+    const now = new Date();
+    const hh = String(now.getHours()).padStart(2,'0');
+    const mm = String(now.getMinutes()).padStart(2,'0');
+    statusEl.textContent = '저장됨 \u2713 (' + hh + ':' + mm + ' 기준, 이 기기에 자동 저장됨)';
+  }
+  ALL_IDS.forEach(id=>{
+    const el = document.getElementById(id);
+    if(!el) return;
+    el.addEventListener('input', saveAll);
+    el.addEventListener('change', saveAll);
+  });
+  saveAll();
+
+  function buildPadletText(d){
+    const kws = KEYWORD_IDS.map(id=>d[id]).filter(v=>v && v.trim() !== '');
+    return [
+      '[나의 강점 소개] ' + (d.name||''),
+      '강점 키워드: ' + kws.map(k=>'#'+k).join(' '),
+      '나는 ' + (d.blank1||'_____') + ' 를 할 때, 강점이 있다.',
+      '이 강점 덕분에 나는 ' + (d.blank2||'_____') + ' 을/를 할 수 있었다.',
+      '앞으로 이 강점을 ' + (d.blank3||'_____') + ' 에 써보고 싶다.',
+    ].join('\n');
+  }
+
+  document.getElementById('copyBtn').addEventListener('click', ()=>{
+    const d = collectData(ALL_IDS);
+    const text = buildPadletText(d);
+    navigator.clipboard.writeText(text).then(()=>{
+      const msg = document.getElementById('copyMsg');
+      msg.textContent = '복사되었습니다. 패들렛에 붙여넣기(Ctrl+V) 해주세요!';
+      setTimeout(()=>{ msg.textContent=''; }, 4000);
+    }).catch(()=>{
+      alert('복사에 실패했습니다. 직접 선택해서 복사해주세요.');
+    });
+  });
+
+  document.getElementById('downloadBtn').addEventListener('click', ()=>{
+    const d = collectData(ALL_IDS);
+    const lines = [
+      '[12차시] 자신의 강점 구체화하기 - 활동지 12',
+      '학년/반/번호: ' + (d.grade||'') + '학년 ' + (d.classno||'') + '반 ' + (d.studentno||'') + '번',
+      '이름: ' + (d.name||''),
+      '',
+      '1. 강점 키워드',
+      '  ' + KEYWORD_IDS.map(id=>d[id]).filter(v=>v&&v.trim()!=='').map(k=>'#'+k).join(' '),
+      '',
+      '2. 강점 문장 완성',
+      '  나는 ' + (d.blank1||'') + ' 를 할 때, 강점이 있다.',
+      '  이 강점 덕분에 나는 ' + (d.blank2||'') + ' 을/를 할 수 있었다.',
+      '  앞으로 이 강점을 ' + (d.blank3||'') + ' 에 써보고 싶다.',
+    ];
+    downloadText('12차시_활동지', lines);
+  });
+});
+</script>
+</body>
+</html>

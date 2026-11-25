@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>중1 사회정서교육 디지털 학습자료</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --primary:#2f6fed; --primary-dark:#1d4fbf; --bg:#f6f7fb; --card:#ffffff;
+  --text:#1f2430; --sub:#6b7280; --border:#e3e6ec; --accent:#fef3e0; --good:#2e9e6b;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:'Pretendard',-apple-system,'Noto Sans KR',sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.6; padding-bottom:60px;
+}
+header.top{
+  background:var(--primary); color:#fff; padding:18px 20px; position:sticky; top:0; z-index:10;
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;
+}
+header.top a{color:#fff; text-decoration:none; font-size:14px; border:1px solid rgba(255,255,255,.6); padding:6px 12px; border-radius:20px;}
+header.top a:hover{background:rgba(255,255,255,.15);}
+.title{font-size:18px; font-weight:700;}
+.wrap{max-width:760px; margin:24px auto; padding:0 16px;}
+.card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:22px 24px; margin-bottom:20px;}
+.card h2{margin-top:0; font-size:17px; color:var(--primary-dark); display:flex; align-items:center; gap:8px;}
+.badge{display:inline-block; background:var(--accent); color:#8a5a00; font-size:12px; padding:3px 10px; border-radius:20px; font-weight:600;}
+.sub{color:var(--sub); font-size:14px; margin:4px 0 14px;}
+.flow{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;}
+.flow span{background:#eef3ff; color:var(--primary-dark); font-size:13px; padding:6px 12px; border-radius:20px;}
+label{display:block; font-size:14px; font-weight:600; margin:14px 0 6px;}
+input[type=text], textarea, select{
+  width:100%; padding:10px 12px; border:1px solid var(--border); border-radius:10px; font-size:14px;
+  font-family:inherit; background:#fff;
+}
+textarea{resize:vertical; min-height:60px;}
+.row-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+.info-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:6px;}
+@media (max-width:600px){.row-grid,.info-grid{grid-template-columns:1fr 1fr;}}
+.music-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:10px;}
+@media (max-width:600px){.music-grid{grid-template-columns:1fr;}}
+.music-box{border:1px solid var(--border); border-radius:12px; padding:14px;}
+.music-box .mtitle{font-weight:700; font-size:14px; margin-bottom:8px; color:var(--primary-dark);}
+.chk{display:flex; align-items:center; gap:6px; font-size:13.5px; font-weight:400; margin:4px 0;}
+.chk input{width:16px; height:16px;}
+.example{background:#f4f6fb; border-left:3px solid var(--primary); padding:8px 12px; font-size:13px; color:var(--sub); border-radius:6px; margin:8px 0;}
+.blank-sentence{font-size:14px; line-height:2.1; margin:10px 0;}
+.blank-sentence input{display:inline-block; width:180px; border:none; border-bottom:2px solid var(--primary); border-radius:0; padding:2px 6px; font-size:14px; background:#f4f6fb;}
+.actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px;}
+button{
+  cursor:pointer; border:none; border-radius:10px; padding:11px 18px; font-size:14px; font-weight:600;
+  font-family:inherit;
+}
+.btn-primary{background:var(--primary); color:#fff;}
+.btn-primary:hover{background:var(--primary-dark);}
+.btn-ghost{background:#fff; color:var(--primary-dark); border:1px solid var(--border);}
+.btn-ghost:hover{background:#f0f3fa;}
+.save-status{font-size:12.5px; color:var(--good); margin-top:10px; min-height:18px;}
+.navfoot{display:flex; justify-content:space-between; max-width:760px; margin:0 auto 40px; padding:0 16px;}
+.navfoot a{
+  text-decoration:none; font-size:14px; color:var(--primary-dark); border:1px solid var(--border);
+  background:#fff; padding:10px 16px; border-radius:10px; font-weight:600;
+}
+.navfoot a:hover{background:#f0f3fa;}
+.keyword-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px;}
+.keyword-row input{flex:1; min-width:110px;}
+
+.lesson-list{display:grid; gap:12px;}
+.lesson-item{
+  display:flex; justify-content:space-between; align-items:center; gap:12px;
+  border:1px solid var(--border); border-radius:14px; padding:16px 18px; background:#fff; text-decoration:none; color:var(--text);
+}
+.lesson-item:hover{border-color:var(--primary); box-shadow:0 0 0 2px #eef3ff;}
+.lesson-item .num{
+  width:42px; height:42px; border-radius:12px; background:#eef3ff; color:var(--primary-dark);
+  display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; flex-shrink:0;
+}
+.lesson-item .meta .cat{font-size:12px; color:var(--sub); font-weight:600;}
+.lesson-item .meta .ttl{font-size:15px; font-weight:700; margin-top:2px;}
+.lesson-item .arrow{color:var(--primary); font-size:18px;}
+.lesson-item.disabled{opacity:.45; pointer-events:none;}
+.section-label{font-size:13px; font-weight:700; color:var(--sub); margin:22px 4px 8px;}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="title">사회정서교육 디지털 학습자료 &middot; 중1</div>
+</header>
+<div class="wrap">
+  <div class="card">
+    <h2>목차</h2>
+    <p class="sub">차시를 눌러 학습 활동지를 온라인으로 작성하세요. 작성 내용은 이 기기에 자동 저장되고, 다운로드 버튼으로 제출용 파일을 받을 수 있습니다.</p>
+  </div>
+
+  <div class="section-label">자기 (SELF)</div>
+  <div class="lesson-list">
+    <a class="lesson-item" href="lesson11.html">
+      <div class="num">11</div>
+      <div class="meta"><div class="cat">자기</div><div class="ttl">나의 약점과 강점 알기</div></div>
+      <div class="arrow">&#8594;</div>
+    </a>
+    <a class="lesson-item" href="lesson12.html">
+      <div class="num">12</div>
+      <div class="meta"><div class="cat">자기</div><div class="ttl">자신의 강점 구체화하기</div></div>
+      <div class="arrow">&#8594;</div>
+    </a>
+  </div>
+
+  <div class="section-label">그 외 차시 (준비 중)</div>
+  <div class="lesson-list">
+    <a class="lesson-item disabled" href="#">
+      <div class="num">01-10</div>
+      <div class="meta"><div class="cat">자기</div><div class="ttl">감정 인식 ~ 어려움을 통한 성장 (준비중)</div></div>
+      <div class="arrow">&#8942;</div>
+    </a>
+    <a class="lesson-item disabled" href="#">
+      <div class="num">13-22</div>
+      <div class="meta"><div class="cat">대인관계</div><div class="ttl">관점 다양성 ~ 갈등 이해 (준비중)</div></div>
+      <div class="arrow">&#8942;</div>
+    </a>
+    <a class="lesson-item disabled" href="#">
+      <div class="num">23-30</div>
+      <div class="meta"><div class="cat">공동체</div><div class="ttl">공동체 가치 ~ 문제해결 (준비중)</div></div>
+      <div class="arrow">&#8942;</div>
+    </a>
+    <a class="lesson-item disabled" href="#">
+      <div class="num">31-34</div>
+      <div class="meta"><div class="cat">마음건강</div><div class="ttl">마음건강 이해 ~ 표현하기 (준비중)</div></div>
+      <div class="arrow">&#8942;</div>
+    </a>
+  </div>
+</div>
+</body>
+</html>

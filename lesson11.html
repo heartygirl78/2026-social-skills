@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>11차시 - 나의 약점과 강점 알기</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --primary:#2f6fed; --primary-dark:#1d4fbf; --bg:#f6f7fb; --card:#ffffff;
+  --text:#1f2430; --sub:#6b7280; --border:#e3e6ec; --accent:#fef3e0; --good:#2e9e6b;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; font-family:'Pretendard',-apple-system,'Noto Sans KR',sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.6; padding-bottom:60px;
+}
+header.top{
+  background:var(--primary); color:#fff; padding:18px 20px; position:sticky; top:0; z-index:10;
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;
+}
+header.top a{color:#fff; text-decoration:none; font-size:14px; border:1px solid rgba(255,255,255,.6); padding:6px 12px; border-radius:20px;}
+header.top a:hover{background:rgba(255,255,255,.15);}
+.title{font-size:18px; font-weight:700;}
+.wrap{max-width:760px; margin:24px auto; padding:0 16px;}
+.card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:22px 24px; margin-bottom:20px;}
+.card h2{margin-top:0; font-size:17px; color:var(--primary-dark); display:flex; align-items:center; gap:8px;}
+.badge{display:inline-block; background:var(--accent); color:#8a5a00; font-size:12px; padding:3px 10px; border-radius:20px; font-weight:600;}
+.sub{color:var(--sub); font-size:14px; margin:4px 0 14px;}
+.flow{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;}
+.flow span{background:#eef3ff; color:var(--primary-dark); font-size:13px; padding:6px 12px; border-radius:20px;}
+label{display:block; font-size:14px; font-weight:600; margin:14px 0 6px;}
+input[type=text], textarea, select{
+  width:100%; padding:10px 12px; border:1px solid var(--border); border-radius:10px; font-size:14px;
+  font-family:inherit; background:#fff;
+}
+textarea{resize:vertical; min-height:60px;}
+.row-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+.info-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:6px;}
+@media (max-width:600px){.row-grid,.info-grid{grid-template-columns:1fr 1fr;}}
+.music-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:10px;}
+@media (max-width:600px){.music-grid{grid-template-columns:1fr;}}
+.music-box{border:1px solid var(--border); border-radius:12px; padding:14px;}
+.music-box .mtitle{font-weight:700; font-size:14px; margin-bottom:8px; color:var(--primary-dark);}
+.chk{display:flex; align-items:center; gap:6px; font-size:13.5px; font-weight:400; margin:4px 0;}
+.chk input{width:16px; height:16px;}
+.example{background:#f4f6fb; border-left:3px solid var(--primary); padding:8px 12px; font-size:13px; color:var(--sub); border-radius:6px; margin:8px 0;}
+.blank-sentence{font-size:14px; line-height:2.1; margin:10px 0;}
+.blank-sentence input{display:inline-block; width:180px; border:none; border-bottom:2px solid var(--primary); border-radius:0; padding:2px 6px; font-size:14px; background:#f4f6fb;}
+.actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px;}
+button{
+  cursor:pointer; border:none; border-radius:10px; padding:11px 18px; font-size:14px; font-weight:600;
+  font-family:inherit;
+}
+.btn-primary{background:var(--primary); color:#fff;}
+.btn-primary:hover{background:var(--primary-dark);}
+.btn-ghost{background:#fff; color:var(--primary-dark); border:1px solid var(--border);}
+.btn-ghost:hover{background:#f0f3fa;}
+.save-status{font-size:12.5px; color:var(--good); margin-top:10px; min-height:18px;}
+.navfoot{display:flex; justify-content:space-between; max-width:760px; margin:0 auto 40px; padding:0 16px;}
+.navfoot a{
+  text-decoration:none; font-size:14px; color:var(--primary-dark); border:1px solid var(--border);
+  background:#fff; padding:10px 16px; border-radius:10px; font-weight:600;
+}
+.navfoot a:hover{background:#f0f3fa;}
+.keyword-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px;}
+.keyword-row input{flex:1; min-width:110px;}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="title">11차시 &middot; 자기 - 나의 약점과 강점 알기</div>
+  <a href="index.html">목차</a>
+</header>
+<div class="wrap">
+
+  <div class="card">
+    <h2>수업 안내 <span class="badge">학습 목표</span></h2>
+    <p class="sub">자신의 약점과 강점을 탐색하고, 이를 구체적인 표현으로 나타낼 수 있다.</p>
+    <div class="flow">
+      <span>도입 - 즐겨 듣는 음악은?</span>
+      <span>이해하기 - 음악의 요소(리듬/셈여림/선율)</span>
+      <span>연습하기 - 활동지 작성</span>
+      <span>적용하기 - 모둠 발표</span>
+      <span>정리하기 - 한 단어로 표현하기</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>활동지 11 &middot; 자신의 약점과 강점 인식하기</h2>
+    <p class="sub">1단계: 내가 평소 좋아하는 음악의 특징 중 자신에게 해당되는 것에 체크하세요. 정답은 없으며, 중복 선택 가능합니다.</p>
+
+    <div class="info-grid">
+      <div><label>학년</label><input type="text" id="grade" placeholder="예: 1"></div>
+      <div><label>반</label><input type="text" id="classno" placeholder="예: 3"></div>
+      <div><label>번호</label><input type="text" id="studentno" placeholder="예: 12"></div>
+      <div><label>이름</label><input type="text" id="name" placeholder="홍길동"></div>
+    </div>
+
+    <div class="music-grid">
+<div class="music-box"><div class="mtitle">빠른 음악을 좋아해요</div><label class="chk"><input type="checkbox" id="m0_0" data-label="이해가 빠르다"> 이해가 빠르다</label><label class="chk"><input type="checkbox" id="m0_1" data-label="추진력이 있다"> 추진력이 있다</label><label class="chk"><input type="checkbox" id="m0_2" data-label="성격이 급하다"> 성격이 급하다</label><label class="chk"><input type="checkbox" id="m0_3" data-label="실수를 할 때가 있다"> 실수를 할 때가 있다</label><label class="chk"><input type="checkbox" id="m0_na" data-label="해당없음/잘 모르겠음"> 해당없음 / 잘 모르겠음</label></div><div class="music-box"><div class="mtitle">느린 음악을 좋아해요</div><label class="chk"><input type="checkbox" id="m1_0" data-label="차분하다"> 차분하다</label><label class="chk"><input type="checkbox" id="m1_1" data-label="신중하다"> 신중하다</label><label class="chk"><input type="checkbox" id="m1_2" data-label="일을 미루는 경향이 있다"> 일을 미루는 경향이 있다</label><label class="chk"><input type="checkbox" id="m1_3" data-label="결정이 늦다"> 결정이 늦다</label><label class="chk"><input type="checkbox" id="m1_na" data-label="해당없음/잘 모르겠음"> 해당없음 / 잘 모르겠음</label></div><div class="music-box"><div class="mtitle">규칙적인 음악을 좋아해요</div><label class="chk"><input type="checkbox" id="m2_0" data-label="성실하다"> 성실하다</label><label class="chk"><input type="checkbox" id="m2_1" data-label="계획적이다"> 계획적이다</label><label class="chk"><input type="checkbox" id="m2_2" data-label="융통성이 부족하다"> 융통성이 부족하다</label><label class="chk"><input type="checkbox" id="m2_3" data-label="고정관념이 강하다"> 고정관념이 강하다</label><label class="chk"><input type="checkbox" id="m2_na" data-label="해당없음/잘 모르겠음"> 해당없음 / 잘 모르겠음</label></div><div class="music-box"><div class="mtitle">불규칙적 음악을 좋아해요</div><label class="chk"><input type="checkbox" id="m3_0" data-label="창의적이다"> 창의적이다</label><label class="chk"><input type="checkbox" id="m3_1" data-label="새로운 시도를 좋아한다"> 새로운 시도를 좋아한다</label><label class="chk"><input type="checkbox" id="m3_2" data-label="산만하다"> 산만하다</label><label class="chk"><input type="checkbox" id="m3_3" data-label="집중력이 부족하다"> 집중력이 부족하다</label><label class="chk"><input type="checkbox" id="m3_na" data-label="해당없음/잘 모르겠음"> 해당없음 / 잘 모르겠음</label></div><div class="music-box"><div class="mtitle">셈여림이 강한 ff(매우 세게) 음악을 좋아해요</div><label class="chk"><input type="checkbox" id="m4_0" data-label="리더십이 있다"> 리더십이 있다</label><label class="chk"><input type="checkbox" id="m4_1" data-label="자기주장이 뚜렷하다"> 자기주장이 뚜렷하다</label><label class="chk"><input type="checkbox" id="m4_2" data-label="고집이 세다"> 고집이 세다</label><label class="chk"><input type="checkbox" id="m4_3" data-label="수용이 어렵다"> 수용이 어렵다</label><label class="chk"><input type="checkbox" id="m4_na" data-label="해당없음/잘 모르겠음"> 해당없음 / 잘 모르겠음</label></div><div class="music-box"><div class="mtitle">셈여림이 여린 pp(매우 여리게) 음악을 좋아해요</div><label class="chk"><input type="checkbox" id="m5_0" data-label="감수성이 풍부하다"> 감수성이 풍부하다</label><label class="chk"><input type="checkbox" id="m5_1" data-label="세심하고 배려심이 있다"> 세심하고 배려심이 있다</label><label class="chk"><input type="checkbox" id="m5_2" data-label="소극적이다"> 소극적이다</label><label class="chk"><input type="checkbox" id="m5_3" data-label="자신감이 부족하다"> 자신감이 부족하다</label><label class="chk"><input type="checkbox" id="m5_na" data-label="해당없음/잘 모르겠음"> 해당없음 / 잘 모르겠음</label></div><div class="music-box"><div class="mtitle">밝고 경쾌한 음악을 좋아해요</div><label class="chk"><input type="checkbox" id="m6_0" data-label="긍정적이고 활동적이다"> 긍정적이고 활동적이다</label><label class="chk"><input type="checkbox" id="m6_1" data-label="에너지가 넘친다"> 에너지가 넘친다</label><label class="chk"><input type="checkbox" id="m6_2" data-label="즉흥적이다"> 즉흥적이다</label><label class="chk"><input type="checkbox" id="m6_3" data-label="가벼워 보일 수 있다"> 가벼워 보일 수 있다</label><label class="chk"><input type="checkbox" id="m6_na" data-label="해당없음/잘 모르겠음"> 해당없음 / 잘 모르겠음</label></div><div class="music-box"><div class="mtitle">진지하고 서정적인 음악을 좋아해요</div><label class="chk"><input type="checkbox" id="m7_0" data-label="따뜻한 마음을 가지고 있다"> 따뜻한 마음을 가지고 있다</label><label class="chk"><input type="checkbox" id="m7_1" data-label="깊이 있는 감성을 가지고 있다"> 깊이 있는 감성을 가지고 있다</label><label class="chk"><input type="checkbox" id="m7_2" data-label="상처를 잘 받는다"> 상처를 잘 받는다</label><label class="chk"><input type="checkbox" id="m7_3" data-label="걱정이 많다"> 걱정이 많다</label><label class="chk"><input type="checkbox" id="m7_na" data-label="해당없음/잘 모르겠음"> 해당없음 / 잘 모르겠음</label></div>
+    </div>
+
+    <h2 style="margin-top:26px;">2단계 &middot; 나의 경험 적어보기</h2>
+    <p class="sub">1단계에서 체크한 것 중 나에게 해당되는 것 2~3개를 골라, 그 성향이 드러난 나의 경험을 적어주세요.</p>
+    <div class="example">예시) 상처를 잘 받는다 → 친구들의 사소한 농담에도 서운한 적이 있다.<br>성실하다 → 학교 숙제를 잊지 않고 준비하며 과제 제출 기한을 잘 지킨다.</div>
+
+    <label>① 선택한 성향</label>
+    <select id="sel1"><option value="">-- 1단계에서 체크한 항목 중 선택 --</option></select>
+    <label>관련 경험</label>
+    <textarea id="exp1" placeholder="이 성향이 드러났던 나의 경험을 적어주세요."></textarea>
+
+    <label>② 선택한 성향</label>
+    <select id="sel2"><option value="">-- 1단계에서 체크한 항목 중 선택 --</option></select>
+    <label>관련 경험</label>
+    <textarea id="exp2" placeholder="이 성향이 드러났던 나의 경험을 적어주세요."></textarea>
+
+    <label>③ 선택한 성향 (선택사항)</label>
+    <select id="sel3"><option value="">-- 1단계에서 체크한 항목 중 선택 --</option></select>
+    <label>관련 경험</label>
+    <textarea id="exp3" placeholder="이 성향이 드러났던 나의 경험을 적어주세요."></textarea>
+
+    <div class="actions">
+      <button class="btn-primary" id="downloadBtn">활동지 다운로드 (제출용 .txt)</button>
+    </div>
+    <div class="save-status" id="saveStatus"></div>
+  </div>
+</div>
+
+<div class="navfoot">
+  <a href="index.html">&#8592; 목차</a>
+  <a href="lesson12.html">다음 차시(12차시) &#8594;</a>
+</div>
+
+<script>
+
+function collectData(ids){
+  const data = {};
+  ids.forEach(id=>{
+    const el = document.getElementById(id);
+    if(!el) return;
+    if(el.type === 'checkbox'){ data[id] = el.checked; }
+    else { data[id] = el.value; }
+  });
+  return data;
+}
+function restoreData(ids, storeKey){
+  const saved = localStorage.getItem(storeKey);
+  if(!saved) return;
+  try{
+    const data = JSON.parse(saved);
+    ids.forEach(id=>{
+      const el = document.getElementById(id);
+      if(!el || !(id in data)) return;
+      if(el.type === 'checkbox'){ el.checked = data[id]; }
+      else { el.value = data[id]; }
+    });
+  }catch(e){}
+}
+function setupAutosave(ids, storeKey, statusElId){
+  restoreData(ids, storeKey);
+  const statusEl = document.getElementById(statusElId);
+  function save(){
+    const data = collectData(ids);
+    localStorage.setItem(storeKey, JSON.stringify(data));
+    if(statusEl){
+      const now = new Date();
+      const hh = String(now.getHours()).padStart(2,'0');
+      const mm = String(now.getMinutes()).padStart(2,'0');
+      statusEl.textContent = '저장됨 \u2713 (' + hh + ':' + mm + ' 기준, 이 기기에 자동 저장)';
+    }
+  }
+  ids.forEach(id=>{
+    const el = document.getElementById(id);
+    if(!el) return;
+    el.addEventListener('input', save);
+    el.addEventListener('change', save);
+  });
+  save();
+}
+function downloadText(filenameBase, lines){
+  const studentName = document.getElementById('name') ? (document.getElementById('name').value || '이름미입력') : '이름미입력';
+  const content = lines.join('\n');
+  const blob = new Blob([content], {type:'text/plain;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filenameBase + '_' + studentName + '.txt';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+
+const CHECK_IDS = ['m0_0', 'm0_1', 'm0_2', 'm0_3', 'm0_na', 'm1_0', 'm1_1', 'm1_2', 'm1_3', 'm1_na', 'm2_0', 'm2_1', 'm2_2', 'm2_3', 'm2_na', 'm3_0', 'm3_1', 'm3_2', 'm3_3', 'm3_na', 'm4_0', 'm4_1', 'm4_2', 'm4_3', 'm4_na', 'm5_0', 'm5_1', 'm5_2', 'm5_3', 'm5_na', 'm6_0', 'm6_1', 'm6_2', 'm6_3', 'm6_na', 'm7_0', 'm7_1', 'm7_2', 'm7_3', 'm7_na'];
+const INFO_IDS = ['grade','classno','studentno','name'];
+const STEP2_IDS = ['sel1','exp1','sel2','exp2','sel3','exp3'];
+const ALL_IDS = INFO_IDS.concat(CHECK_IDS).concat(STEP2_IDS);
+const STORE_KEY = 'ssec_lesson11_v1';
+
+function refreshSelectOptions(){
+  const checked = CHECK_IDS
+    .map(id => document.getElementById(id))
+    .filter(el => el && el.checked && el.dataset.label.indexOf('해당없음') === -1)
+    .map(el => el.dataset.label);
+  ['sel1','sel2','sel3'].forEach(selId=>{
+    const sel = document.getElementById(selId);
+    const prev = sel.value;
+    sel.innerHTML = '<option value="">-- 1단계에서 체크한 항목 중 선택 --</option>';
+    checked.forEach(label=>{
+      const opt = document.createElement('option');
+      opt.value = label; opt.textContent = label;
+      sel.appendChild(opt);
+    });
+    if(checked.includes(prev)) sel.value = prev;
+  });
+}
+
+window.addEventListener('DOMContentLoaded', ()=>{
+  restoreData(ALL_IDS, STORE_KEY);
+  refreshSelectOptions();
+  restoreData(['sel1','sel2','sel3'], STORE_KEY);
+
+  const statusEl = document.getElementById('saveStatus');
+  function saveAll(){
+    const data = collectData(ALL_IDS);
+    localStorage.setItem(STORE_KEY, JSON.stringify(data));
+    const now = new Date();
+    const hh = String(now.getHours()).padStart(2,'0');
+    const mm = String(now.getMinutes()).padStart(2,'0');
+    statusEl.textContent = '저장됨 \u2713 (' + hh + ':' + mm + ' 기준, 이 기기에 자동 저장됨)';
+  }
+  ALL_IDS.forEach(id=>{
+    const el = document.getElementById(id);
+    if(!el) return;
+    el.addEventListener('input', saveAll);
+    el.addEventListener('change', ()=>{ if(CHECK_IDS.includes(id)) refreshSelectOptions(); saveAll(); });
+  });
+  saveAll();
+
+  document.getElementById('downloadBtn').addEventListener('click', ()=>{
+    const d = collectData(ALL_IDS);
+    const checkedLabels = CHECK_IDS
+      .map(id => document.getElementById(id))
+      .filter(el => el.checked)
+      .map(el => el.dataset.label);
+    const lines = [
+      '[11차시] 자신의 약점과 강점 인식하기 - 활동지 11',
+      '학년/반/번호: ' + (d.grade||'') + '학년 ' + (d.classno||'') + '반 ' + (d.studentno||'') + '번',
+      '이름: ' + (d.name||''),
+      '',
+      '1단계. 체크한 특성: ' + (checkedLabels.length ? checkedLabels.join(', ') : '(체크 없음)'),
+      '',
+      '2단계. 나에게 해당되는 특성과 경험',
+      '  1) ' + (d.sel1||'') + ' -> ' + (d.exp1||''),
+      '  2) ' + (d.sel2||'') + ' -> ' + (d.exp2||''),
+      '  3) ' + (d.sel3||'') + ' -> ' + (d.exp3||''),
+    ];
+    downloadText('11차시_활동지', lines);
+  });
+});
+</script>
+</body>
+</html>
